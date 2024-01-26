@@ -59,9 +59,9 @@ a {
     color: #02766F;
 }
 
-#desktop-view {
+/* #nav-desktop-view {
     display: none;
-}
+} */
 
 /* .left-side-main {
     border: 1px solid black;
@@ -100,7 +100,15 @@ a {
         padding: 30px !important;
     }
 
-    .navbar-toggler .navbar-toggler-icon {
-        border-color: #FFFFFF;
+    #nav-icon {
+        color: #FFFFFF;
+        font-size: 2rem;
     }
+    .navbar-toggler {
+        border-color: white !important; /* Set the desired border color */
+    }
+    .navbar-toggler-icon {
+        color: white !important; /* Set the desired toggle icon color */
+    }
+
 }
