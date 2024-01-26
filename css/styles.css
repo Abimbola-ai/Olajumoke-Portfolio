@@ -101,11 +101,10 @@ a {
     }
 
     #nav-icon {
-        color: #FFFFFF;
         font-size: 2rem;
     }
     .navbar-toggler {
-        border-color: white !important; /* Set the desired border color */
+        border-color: white !important; 
     }
     .navbar-toggler-icon {
         color: white !important; /* Set the desired toggle icon color */
