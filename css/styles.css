@@ -63,9 +63,7 @@ nav {
     display: none;
 }
 
-/* .left-side-main {
-    border: 1px solid black;
-} */
+
 
 /* media query to hide the navbar in desktop mode */
 @media (min-width: 768px) {
@@ -83,11 +81,9 @@ nav {
         display: none;
     }
 
-    .desktop-view {
+    /* .desktop-view {
         display: flex;
-       
-        /* border: 1px solid black; */
-    }
+    } */
 
     h1 {
         font-size: 250% !important;
@@ -112,7 +108,7 @@ nav {
         border-color: white !important; 
     }
     .navbar-toggler-icon {
-        color: white !important; /* Set the desired toggle icon color */
+        color: white !important; 
     }
 
 }
