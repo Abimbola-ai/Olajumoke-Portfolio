@@ -59,16 +59,21 @@ a {
     color: #02766F;
 }
 
-/* #nav-desktop-view {
+nav {
     display: none;
-} */
+}
 
 /* .left-side-main {
     border: 1px solid black;
 } */
 
-
-
+/* media query to hide the navbar in desktop mode */
+@media (min-width: 768px) {
+    #nav-desktop-view {
+        display: none;
+    }
+}
+/* media query for mobile mode */
 @media (max-width: 768px) {
     .home-page {
         min-height: 30vh;
