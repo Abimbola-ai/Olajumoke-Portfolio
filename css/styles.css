@@ -78,11 +78,8 @@ nav {
 #skills {
     background-color: #F4F4F4;
     background-size: cover !important;
-    min-height: 100vh;
-
+    /* min-height: 100vh; */
 }
-
-
 
 .skill-heading h2 {
     font-weight: 600;
@@ -173,12 +170,29 @@ nav {
         font-size: 0.8rem;
     }
 
-    .edu-details h3 {
+    .edu-details h3, .skills h3 {
         font-size: 1rem;
     }
 
-    .edu-details p {
+    .edu-details p, .skills p {
         font-size: 0.8rem;
     }
+    .skill-heading h2{
+        font-size: 1.5rem;
+    }
+    .skill-container .skills .progress-bar {
+        height: 1rem;
+        width: 60%;
+  
+    }
+    
+    /* .skill-container .skills .progress-bar span {
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        background-color: #02766F;;
+    }
+     */
+
 
 }
