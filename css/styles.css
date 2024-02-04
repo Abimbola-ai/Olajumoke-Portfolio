@@ -1,37 +1,33 @@
+/* styles.css */
+/* General Design */
 * {
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-section {
-    /* padding-top: 4vh; */
-    height: 100vh;
-    /* margin: 0 10rem; */
-    box-sizing: border-box;
-    min-height: fit-content;
-  }
-
-  .icon {
-    cursor: pointer;
-    height: 2rem;
-  }
-  
-
-#home-page{
-    background-size: cover;
-    /* min-height: 100vh; */
-    position: relative;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
     font-size: 500% ;
     font-weight: 700;
 }
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
-p .role {
-    font-weight: 400;
-    font-size: 1.5rem;
+/* icons */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Navigation */
+nav {
+    display: none;
 }
 
 .nav-links {
@@ -42,14 +38,6 @@ p .role {
 .nav-link {
     color: #FFFFFF;
 }
-.fa-brands, .fa-solid {
-    color: #FFFFFF;
-}
-
-a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
 
 .nav-link:hover {
     color: #02766F;
@@ -57,6 +45,25 @@ a {
 
 .nav-link:active {
     color: #69ABA9;
+}
+
+/* Section */
+section {
+    min-height: 100vh;
+}
+/* Home section */
+#home-page{
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+p .role {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.fa-brands, .fa-solid {
+    color: #FFFFFF;
 }
 .color-overlay {
     position: absolute;
@@ -76,7 +83,6 @@ a {
     border: 2px solid #02766F;
     background-color: #02766F;
 }
-
 .wrap-text {
     width: 80%;
     height: 60%;
@@ -93,10 +99,7 @@ a {
     color: #02766F;
 }
 
-nav {
-    display: none;
-}
-
+/* Experience and Education Section */
 .page-heading h2{
     font-weight: 600;
     font-size: 2.5rem;
@@ -111,19 +114,26 @@ nav {
 #experience {
     min-height: 70vh;
 }
+
+/* Skills section */
 #skills {
     background-color: #F4F4F4;
     background-size: cover !important;
-    /* min-height: 60vh; */
 }
 
 .skill-heading h2 {
     font-weight: 600;
     font-size: 2.5rem;
     color: #02766F;
+    padding-top: 5rem; 
+}
+
+.skill-heading-projects h2  {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #02766F;
     padding-top: 5rem;
-    
- 
+    text-align: center;
 }
 
 .skills h3 {
@@ -142,7 +152,6 @@ nav {
 }
 
 .skill-container {
-    /* display: flex; */
     justify-content: center;
 }
 
@@ -152,54 +161,30 @@ nav {
     width: 80%;
     background-color: #02766F;;
 }
-/* Experience section */
-.section__text__p1 {
-    text-align: center;
-  }
-  .experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-  }
 
-  
 /* Projects section */
-.section_text_p1 {
-    text-align: center;
-  }
-
 .title {
     font-size: 2rem;
     text-align: center;
 }
 
-  .experience-details-container {
+.experience-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  .article-container {
+    margin: 0px 20px;
+}
+.project-img-container {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
-  }
-  
-  article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-  }
-  
-  article .icon {
-    cursor: default;
-  }
+}
 
-  .details-container {
+
+.details-container {
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -207,122 +192,63 @@ nav {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-  }
+}
 
-  .color-container {
+.color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
   }
 
-  .article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-  }
-
-  .project-img {
+.project-img {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
-  }
+}
 
-  .experience-sub-title {
+.project-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
-  }
+}
 
-  .project-title {
+.project-title {
     margin: 1rem;
     color: black;
-  }
+}
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about-containers,
+.about-details-container {
+  display: flex;
+}
 
-  .btn-container {
+/* Buttons */
+
+.btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
-  }
+}
 
-  .btn {
+.project-btn {
+    border: 2px solid #02766F;
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-  }
-  
-  .btn-color-1,
-  .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-  }
-  .btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
+    background: #02766F;
+    color: #FFFFFF;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-    gap: 1rem;
-}
-
-.project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-}
-
-#projects {
-    position: relative;
-}
-
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  .about-containers,
-.about-details-container {
-  display: flex;
-}
+.project-btn:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #02766F;
+} 
 
 
-
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-/* media query to hide the navbar in desktop mode */
-@media (min-width: 768px) {
-    #nav-desktop-view {
-        display: none;
-    }
-}

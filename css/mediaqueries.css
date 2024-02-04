@@ -1,3 +1,10 @@
+/* mediaqueries.css */
+/* media query to hide the navbar in desktop mode */
+@media (min-width: 768px) {
+    #nav-desktop-view {
+        display: none;
+    }
+}
 /* media query for mobile mode */
 @media (max-width: 768px) {
     .home-page {
@@ -76,20 +83,39 @@
     font-size: 2rem;
   }
 
+  .project-btn {
+    font-size: 12px;
+    padding: 0;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1.5rem; 
+}
+
+.project-sub-title {
+    font-size: 1rem;
+    font-weight: 400;
+
+
+}
+
+.skill-heading-projects h2  {
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 1200px) {
+
+  
     #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
-  /* section,
-  .section-container {
-    height: fit-content;
+
+
+  .list-unstyled a {
+    font-size: 1rem;
   }
-  section {
-    margin: 0 5%;
-  } */
+
   .about-containers {
     margin-top: 0;
   }
