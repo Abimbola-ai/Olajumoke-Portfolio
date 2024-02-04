@@ -44,9 +44,11 @@
     }
     .navbar-toggler {
         border-color: white !important; 
+        margin-top: -20px;
     }
     .navbar-toggler-icon {
         color: white !important; 
+        margin-top: 12px;
     }
 
     .page-heading h2{

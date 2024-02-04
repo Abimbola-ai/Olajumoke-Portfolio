@@ -25,6 +25,17 @@ a {
     height: 2rem;
 }
 
+#nav-icon {
+    font-size: 2rem;
+    margin-top: -10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-toggler-icon {
+    color: #02766F !important; /* Change to your desired green color */
+  }
+  
+
 /* Navigation */
 nav {
     display: none;
@@ -33,10 +44,12 @@ nav {
 .nav-links {
     font-size: 150% !important;
     font-weight: 700;
+    
 }
 
 .nav-link {
     color: #FFFFFF;
+    
 }
 
 .nav-link:hover {
@@ -111,29 +124,30 @@ p .role {
     font-weight: 600;
 
 }
+
 #experience {
     min-height: 70vh;
+    /* display: flex; */
+    align-items: center; /* Align children vertically */
+    justify-content: center; /* Center children horizontally */
 }
 
-/* Skills section */
+
+/* Skills and Proficiency section */
 #skills {
     background-color: #F4F4F4;
     background-size: cover !important;
+    align-items: center;
+    min-height: 70vh;
 }
+
 
 .skill-heading h2 {
     font-weight: 600;
     font-size: 2.5rem;
     color: #02766F;
-    padding-top: 5rem; 
-}
-
-.skill-heading-projects h2  {
-    font-weight: 600;
-    font-size: 2.5rem;
-    color: #02766F;
     padding-top: 5rem;
-    text-align: center;
+    text-align: center; /* Add this line */
 }
 
 .skills h3 {
@@ -172,7 +186,6 @@ p .role {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0px 20px;
 }
 .project-img-container {
     display: flex;
